@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Own Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <title>Rock Radar - Metallica: M72 World Tour</title>
+
+    <style>
+      .btn-rock {
+        background-color: #8a1812;
+        color: white;
+      }
+      .btn-rock:hover {
+        background-color: #711410;
+        color: white;
+      }
+      .event-details {
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      .event-img {
+        height: 400px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  
+  <body class="h-100 d-flex flex-column">
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+         <a class="navbar-brand" href="index.html">
+           <img src="images/logo-mockup-new-wit.png" width="106" height="39" alt="logo rockradar">
+         </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active nav-text-large text-white" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active nav-text-large text-white" aria-current="page" href="chats.html">Chats</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active nav-text-large text-white" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <b>Latest News</b>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="upcomingevents.html">Upcoming Events</a></li>
+                <li><a class="dropdown-item" href="newbandradar.html">New Band Radar</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active nav-text-large text-white" aria-current="page" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active nav-text-large text-white" aria-current="page" href="corporate.html">Corporate</a>
+            </li>
+          </ul>
+          <!-- Login button -->
+          <div class="d-flex">
+            <a href="login.html" class="btn" style="background-color: #c9af1a; color: white;">Log In</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End of navigation bar -->
+
+    <!-- Hero section with the new concert crowd image -->
+    <header class="py-2 text-center container-fluid text-light" style="background-image: url('images/concert-crowd-gold.jpg'); background-size: cover; background-position: center; position: relative; height: 400px;">
+      <!-- Darkening overlay -->
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3);"></div>
+      
+      <div class="row" style="position: relative; z-index: 1;">
+        <div class="col-md-8 mx-auto py-5">
+          <h1 class="display-3">Metallica: M72 World Tour</h1>
+          <p class="lead">London Stadium, London • June 18, 2025</p>
+        </div>
+      </div>
+    </header>
+    <!-- End of hero section -->
+
+    <!-- Main content -->
+    <section class="container my-5">
+      <div class="row">
+        <!-- Left column - Event details -->
+        <div class="col-lg-8">
+          <h2>Event Details</h2>
+          <div class="event-details shadow-sm">
+            <p class="lead">Legendary metal icons Metallica are bringing their massive M72 World Tour to London Stadium as part of their European leg.</p>
+            <p>Don't miss this epic show featuring songs from their latest album "72 Seasons" alongside all their classic hits. The band will perform a special extended set with a career-spanning setlist that promises to be an unforgettable night for fans.</p>
+            <p>Joining Metallica as special guests will be Gojira and Architects, making this a must-see event for any metal fan.</p>
+            
+            <h4 class="mt-4">Setlist Expectations</h4>
+            <p>While setlists can change, fans can expect to hear classics like:</p>
+            <ul>
+              <li>Master of Puppets</li>
+              <li>Enter Sandman</li>
+              <li>Nothing Else Matters</li>
+              <li>One</li>
+              <li>Fuel</li>
+              <li>New tracks from "72 Seasons"</li>
+            </ul>
+            
+            <h4 class="mt-4">Venue Information</h4>
+            <p>London Stadium (formerly Olympic Stadium)<br>
+            Queen Elizabeth Olympic Park<br>
+            London E20 2ST</p>
+            
+            <p><strong>Doors Open:</strong> 4:00 PM<br>
+            <strong>Show Starts:</strong> 6:30 PM</p>
+          </div>
+          
+          <h3 class="mt-5">About Metallica</h3>
+          <p>Formed in 1981, Metallica has become one of the most influential and commercially successful rock bands in history. The current lineup consists of founding members James Hetfield (vocals/rhythm guitar) and Lars Ulrich (drums), longtime lead guitarist Kirk Hammett, and bassist Robert Trujillo.</p>
+          
+          <p>With over 125 million albums sold worldwide, Metallica continues to dominate the metal scene with their high-energy performances and distinctive sound that has evolved throughout their four-decade career.</p>
+          
+          <h4 class="mt-4">Latest Album: 72 Seasons</h4>
+          <p>Released to critical acclaim, "72 Seasons" represents the band's return to their thrash metal roots while incorporating new elements. The album explores themes of identity and the formative years of youth.</p>
+          
+        </div>
+        
+        <!-- Right column - Ticket info and related events -->
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="card shadow mb-4">
+            <div class="card-header text-white" style="background-color: #8a1812;">
+              <h4 class="mb-0">Ticket Information</h4>
+            </div>
+            <div class="card-body">
+              <p><strong>General Admission:</strong> £89.50</p>
+              <p><strong>Golden Circle:</strong> £145.00</p>
+              <p><strong>VIP Packages:</strong> From £250.00</p>
+              <p class="text-muted small">* Additional booking fees may apply</p>
+              <p class="small text-center">Presale starts May 10 at 10:00 AM</p>
+            </div>
+          </div>
+          
+          <div class="card shadow mb-4">
+            <div class="card-header text-white" style="background-color: #8a1812;">
+              <h4 class="mb-0">Tour Dates</h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  June 15, 2025
+                  <span>Dublin, Ireland</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
+                  <strong>June 18, 2025</strong>
+                  <span><strong>London, UK</strong></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  June 21, 2025
+                  <span>Paris, France</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  June 24, 2025
+                  <span>Berlin, Germany</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  June 27, 2025
+                  <span>Stockholm, Sweden</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="card shadow">
+            <div class="card-header text-white" style="background-color: #8a1812;">
+              <h4 class="mb-0">You Might Also Like</h4>
+            </div>
+            <div class="card-body">
+              <div class="mb-3">
+                <a href="#" class="text-decoration-none">
+                  <div class="d-flex align-items-center">
+                    <img src="images/ironmaiden.jpg" class="rounded" alt="Iron Maiden" width="70" height="70" style="object-fit: cover;">
+                    <div class="ms-3">
+                      <h6 class="mb-0">Iron Maiden: Legacy of the Beast</h6>
+                      <p class="text-muted mb-0 small">O2 Arena, London<br>June 25, 2025</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              
+              <div>
+                <a href="#" class="text-decoration-none">
+                  <div class="d-flex align-items-center">
+                    <img src="images/ghost.jpg" class="rounded" alt="Ghost" width="70" height="70" style="object-fit: cover;">
+                    <div class="ms-3">
+                      <h6 class="mb-0">Ghost: Imperatour Europe</h6>
+                      <p class="text-muted mb-0 small">Palau Sant Jordi, Barcelona<br>August 20, 2025</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fan comments section -->
+    <section class="container-fluid py-5" style="background-color: #f8f9fa;">
+      <div class="container">
+        <h2 class="text-center mb-4">Fan Zone</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card shadow-sm mb-4">
+              <div class="card-body">
+                <h5>Share Your Excitement</h5>
+                <form>
+                  <div class="mb-3">
+                    <textarea class="form-control" rows="3" placeholder="Write your comment..."></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-rock">Post Comment</button>
+                </form>
+              </div>
+            </div>
+            
+            <div class="card shadow-sm mb-3">
+              <div class="card-body">
+                <div class="d-flex">
+                  <img src="images/user_1.jpg" class="rounded-circle me-3" width="50" height="50" alt="User avatar">
+                  <div>
+                    <h6>Sarah Johnson</h6>
+                    <p>Can't wait for this show! Been a fan since the Black Album and this will be my 5th time seeing them live. The M72 tour production is supposed to be their biggest yet!</p>
+                    <div class="text-muted small">Posted 2 days ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <div class="d-flex">
+                  <img src="images/user_2.jpg" class="rounded-circle me-3" width="50" height="50" alt="User avatar">
+                  <div>
+                    <h6>Mike Reynolds</h6>
+                    <p>Anyone know if they're doing the full 360 stage setup for this show? I heard some venues get the full experience while others don't due to space constraints.</p>
+                    <div class="text-muted small">Posted 3 days ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter section -->
+    <section class="container-fluid py-5 text-light" style="background-color: #c9af1a;">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <h2>Get Concert Updates</h2>
+            <p>Subscribe to our newsletter for exclusive updates, setlist changes, and special announcements for this event.</p>
+          </div>
+          <div class="col-md-6">
+            <form>
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Your email address" aria-label="Email address">
+                <button class="btn" type="submit" style="background-color: #000000; color: white;">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="shadow-lg mt-auto py-4" style="background-color: #8a1812; color: black;">
+      <div class="container d-flex justify-content-between align-items-center">
+        <p>© 2025 — Rock Radar</p>
+        <ul class="list-unstyled d-flex align-items-center opacity-75">
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61573939749750" target="_blank">
+              <img class="m-2" src="images/facebook.svg" alt="Follow us on Facebook" width="26">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/rockradarofficial/" target="_blank">
+              <img class="m-2" src="images/instagram.svg" alt="Follow us on Instagram" width="26">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.reddit.com/user/rockradarofficial/" target="_blank">
+              <img class="m-2" src="images/reddit-logo.svg" alt="Follow us on Reddit" width="26">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+  </body>
+</html>
