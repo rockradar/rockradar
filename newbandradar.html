@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Own Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <title>Rock Radar - New Band Radar</title>
+
+    <!-- Google Analytics code goes just below here (check PRJ4 Guide for details) -->
+
+    <!-- End of Google Analytics code -->
+    
+  </head>
+  <body class="h-100 d-flex flex-column">
+
+    <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="images/logo mockup new wit.png" width="106" height="39">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active nav-text-large text-white" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active nav-text-large text-white" aria-current="page" href="chats.html">Chats</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active nav-text-large text-white" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <b>Latest News</b>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="upcomingevents.html">Upcoming Events</a></li>
+            <li><a class="dropdown-item" href="newbandradar.html">New Band Radar</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active nav-text-large text-white" aria-current="page" href="aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active nav-text-large text-white" aria-current="page" href="corporate.html">Corporate</a>
+        </li>
+      </ul>
+      <!-- Login button added here -->
+      <div class="d-flex">
+        <a href="login.html" class="btn" style="background-color: #000000; color: white;">Log In</a>
+      </div>
+    </div>
+  </div>
+</nav>
+    <!-- End of navigation bar -->
+
+    <!-- Page Header -->
+    <section class="container my-4">
+      <h1 >New Band Radar</h1>
+      <p class="lead">Discover the newest rising stars in rock music. Our radar is always scanning for fresh talent!</p>
+    </section>
+
+    <!-- Featured Bands Carousel -->
+    <section class="container-fluid p-0 mb-5">
+      <div id="bandCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#bandCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Band 1"></button>
+          <button type="button" data-bs-target="#bandCarousel" data-bs-slide-to="1" aria-label="Band 2"></button>
+          <button type="button" data-bs-target="#bandCarousel" data-bs-slide-to="2" aria-label="Band 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <!-- Band 1 -->
+          <div class="carousel-item active">
+            <img src="images/midnightfurry.jpg" class="d-block mx-auto w-100" alt="Midnight Fury" style="max-height: 500px; object-fit: cover;">
+            <div class="carousel-caption" style="background-color: rgba(138, 24, 18, 0.7); border-radius: 10px; padding: 20px;">
+              <h2>Midnight Fury</h2>
+              <p class="d-none d-md-block">Blending classic rock riffs with modern production, Midnight Fury is quickly becoming a fan favorite with their high-energy performances and catchy anthems.</p>
+              <p>
+                <a href="#midnight-fury" class="btn btn-light my-md-2" style="background-color:#c9af1a">Learn more</a>
+              </p>
+            </div>
+          </div>
+          <!-- Band 2 -->
+          <div class="carousel-item">
+            <img src="images/crimsoneclipse.jpg" class="d-block mx-auto w-100" alt="Crimson Eclipse" style="max-height: 500px; object-fit: cover;">
+            <div class="carousel-caption" style="background-color: rgba(138, 24, 18, 0.7); border-radius: 10px; padding: 20px;">
+              <h2>Crimson Eclipse</h2>
+              <p class="d-none d-md-block">This powerhouse quartet from Seattle is turning heads with their progressive sound and complex arrangements, drawing inspiration from 70s rock legends.</p>
+              <p>
+                <a href="#crimson-eclipse" class="btn btn-light my-md-2" style="background-color:#c9af1a">Learn more</a>
+              </p>
+            </div>
+          </div>
+          <!-- Band 3 -->
+          <div class="carousel-item">
+            <img src="images/electricwolves.jpg" class="d-block mx-auto w-100" alt="Electric Wolves" style="max-height: 500px; object-fit: cover;">
+            <div class="carousel-caption" style="background-color: rgba(138, 24, 18, 0.7); border-radius: 10px; padding: 20px;">
+              <h2>Electric Wolves</h2>
+              <p class="d-none d-md-block">With their blues-infused hard rock sound and charismatic frontwoman, Electric Wolves are bringing raw energy back to the rock scene with their debut album.</p>
+              <p>
+                <a href="#electric-wolves" class="btn btn-light my-md-2" style="background-color:#c9af1a">Learn more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#bandCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bandCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Band Details Sections -->
+    <section class="container mb-5">
+      <!-- Band 1 Details -->
+      <div id="midnight-fury" class="row mb-5">
+        <div class="col-lg-4">
+          <img src="images/midnightfurry.jpg" class="img-fluid rounded" alt="Midnight Fury">
+        </div>
+        <div class="col-lg-8">
+          <h2 class="border-start border-5" style="border-color: #8a1812 !important; padding-left: 15px;">Midnight Fury</h2>
+          <p class="lead">From garage band to festival favorites in just two years</p>
+          <p>Formed in 2023, Midnight Fury burst onto the scene with their debut EP "Neon Dreams" that quickly garnered attention for its nostalgic yet fresh approach to hard rock. The band consists of Jake Morrison (vocals), Lisa Chen (guitar), Derek Watts (bass), and Sam Rodriguez (drums).</p>
+          <p>Their latest single "Electric Highway" has been gaining radio play across the country, and they're set to release their first full-length album next month. Catch them on their upcoming East Coast tour starting in June!</p>
+          <div class="d-flex gap-2">
+            <a href="#" class="btn" style="background-color: #c9af1a; color: white;">Listen Now</a>
+            <a href="#" class="btn btn-outline-dark">Tour Dates</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Band 2 Details -->
+      <div id="crimson-eclipse" class="row mb-5">
+        <div class="col-lg-4">
+          <img src="images/crimsoneclipse.jpg" class="img-fluid rounded" alt="Crimson Eclipse">
+        </div>
+        <div class="col-lg-8">
+          <h2 class="border-start border-5" style="border-color: #8a1812 !important; padding-left: 15px;">Crimson Eclipse</h2>
+          <p class="lead">Progressive rock revivalists with a modern twist</p>
+          <p>Crimson Eclipse formed when four music school graduates decided to challenge the boundaries of contemporary rock music. With influences ranging from Pink Floyd to Tool, their sound is characterized by atmospheric soundscapes, intricate guitar work, and thought-provoking lyrics.</p>
+          <p>Their critically acclaimed debut album "Temporal Shift" features the 12-minute epic "Dimensions," which has become a fan favorite at their live shows. The band is currently in the studio working on their sophomore release.</p>
+          <div class="d-flex gap-2">
+            <a href="#" class="btn" style="background-color: #c9af1a; color: white;">Listen Now</a>
+            <a href="#" class="btn btn-outline-dark">Album Review</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Band 3 Details -->
+      <div id="electric-wolves" class="row">
+        <div class="col-lg-4">
+          <img src="images/electricwolves.jpg" class="img-fluid rounded" alt="Electric Wolves">
+        </div>
+        <div class="col-lg-8">
+          <h2 class="border-start border-5" style="border-color: #8a1812 !important; padding-left: 15px;">Electric Wolves</h2>
+          <p class="lead">Bringing blues-rock back with a vengeance</p>
+          <p>Fronted by the dynamic Zoe Harris, whose powerful vocals draw comparisons to Janis Joplin and Beth Hart, Electric Wolves have been shaking up the rock scene with their raw, unfiltered sound. The band's rhythm section provides the perfect foundation for Ryan Clark's blistering guitar solos.</p>
+          <p>Their debut album "Howl at the Moon" was recorded live in the studio with minimal overdubs, capturing the authentic energy of their performances. The band has been earning opening slots for established acts and is quickly building a devoted fanbase.</p>
+          <div class="d-flex gap-2">
+            <a href="#" class="btn" style="background-color: #c9af1a; color: white;">Listen Now</a>
+            <a href="#" class="btn btn-outline-dark">Watch Video</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- More Upcoming Bands -->
+    <section class="container mb-5">
+      <h2 class="mb-4 text-center">More on Our Radar</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Band Card 1 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/desertstorm.jpg" class="card-img-top" alt="Desert Storm">
+            <div class="card-body">
+              <h5 class="card-title">Desert Storm</h5>
+              <p class="card-text">Stoner rock outfit bringing heavy grooves and desert vibes.</p>
+              <a href="#" class="btn btn-sm" style="background-color: #c9af1a; color: white;">Check them out</a>
+            </div>
+          </div>
+        </div>
+        <!-- Band Card 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/neonpriests.jpg" class="card-img-top" alt="Neon Priests">
+            <div class="card-body">
+              <h5 class="card-title">Neon Priests</h5>
+              <p class="card-text">Synth-rock fusion with a distinctly 80s-inspired sound.</p>
+              <a href="#" class="btn btn-sm" style="background-color: #c9af1a; color: white;">Check them out</a>
+            </div>
+          </div>
+        </div>
+        <!-- Band Card 3 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/blackriverjunction.jpg" class="card-img-top" alt="Black River Junction">
+            <div class="card-body">
+              <h5 class="card-title">Black River Junction</h5>
+              <p class="card-text">Southern rock revivalists with a modern edge to their sound.</p>
+              <a href="#" class="btn btn-sm" style="background-color: #c9af1a; color: white;">Check them out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Submit a Band Section -->
+    <section class="container mb-5 p-4 rounded" style="background-color: rgba(138, 24, 18, 0.1);">
+      <div class="row">
+        <div class="col-lg-8">
+          <h2>Know a great new band?</h2>
+          <p>Help us discover the next big thing in rock music! If you've seen a promising new band that deserves more attention, let us know and they might be featured on our radar.</p>
+        </div>
+        <div class="col-lg-4 d-flex align-items-center justify-content-center">
+          <a href="#" class="btn btn-lg" style="background-color: #c9af1a; color: white;">Submit a Band</a>
+        </div>
+      </div>
+    </section>
+
+ <!-- A footer with socials -->
+    <footer class="shadow-lg mt-auto py-4" style="background-color: #8a1812; color: black;">
+  <div class="container d-flex justify-content-between align-items-center">
+    <p>
+    © 2025 — Rock Radar</p>
+    <ul class="list-unstyled d-flex align-items-center opacity-75">
+      <li>
+        <a href="https://www.facebook.com/profile.php?id=61573939749750" target="_blank">
+          <img class="m-2" src="images/facebook.svg" alt="Follow us on" width="26">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/rockradarofficial/" target="_blank">
+          <img class="m-2" src="images/instagram.svg" alt="Follow us on Instagram" width="26">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.reddit.com/user/rockradarofficial/" target="_blank">
+          <img class="m-2" src="images/reddit-logo.svg" alt="Follow us on TikTok" width="26">
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+    <!-- End of the footer -->
+
+  </body>
+</html>

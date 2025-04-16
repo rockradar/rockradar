@@ -1,11 +1,23 @@
 /* Importing a Google Font */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1 {
+  font-family: 'Ultra', serif !important;
+}
+
+h2 {
+  font-family: 'Merriweather', serif !important;
+}
 
 /* Changing the main font and background colour */
 
 body {
-	font-family: Raleway, sans-serif;
+	font-family: Montserrat, sans-serif;
 	background-color: #fffcf8;
 }
 
@@ -18,7 +30,11 @@ header {
 /* Changing the background color for the navigation bar */
 
 .navbar {
-	background-color: #fff0e0;
+	background-color: #8A1812;
+}
+
+.nav-text-large {
+  font-size: 1.55rem !important;
 }
 
 /* Effect on social media buttons */
@@ -42,3 +58,188 @@ footer a:hover {
 		0 0 .2em white,
 		0 0 .5em white;
 }
+
+.main {
+	background-image: url("../images/website_photo_3.jpg");
+	background-size: cover;
+	background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main {
+	padding-top: 125px;
+	padding-bottom: 125px;
+}
+
+
+  .review-card {
+    background-color: #212121;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 800px;
+    border: 1px solid #333;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+
+  .review-stars {
+    margin-bottom: 15px;
+  }
+
+  .star {
+    color: #c9af1a;
+    font-size: 24px;
+    margin-right: 2px;
+  }
+
+  .half-star {
+    color: #c9af1a;
+    font-size: 24px;
+    margin-right: 2px;
+    opacity: 0.5;
+  }
+
+  .review-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #fff;
+    font-style: italic;
+  }
+
+  .review-author {
+    display: flex;
+    align-items: center;
+  }
+
+  .review-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid #c9af1a;
+  }
+
+  .author-name {
+    margin: 0;
+    color: #c9af1a;
+    font-weight: bold;
+  }
+
+  .author-title {
+    margin: 0;
+    color: #aaa;
+    font-size: 14px;
+  }
+
+  #reviewCarousel .carousel-indicators {
+    bottom: -50px;
+  }
+
+  #reviewCarousel .carousel-indicators button {
+    background-color: #666;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+
+  #reviewCarousel .carousel-indicators button.active {
+    background-color: #c9af1a;
+  }
+
+  #reviewCarousel .carousel-control-prev-icon,
+  #reviewCarousel .carousel-control-next-icon {
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(15deg);
+  }
+
+.slogan-section {
+    background-color: #000000;
+    border-top: 1px solid #333;
+  }
+  
+  .slogan-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+/* Country filter navigation styling */
+.nav-pills .nav-link {
+  color: black;
+  background-color: transparent;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #8a1812;
+  color: white;
+}
+
+.nav-pills .nav-link:hover:not(.active) {
+  background-color: #f1f1f1;
+}
+
+      /* Style to make all event images the same height */
+      .event-img {
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+      }
+      
+      .festival-img {
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+      }
+      
+      /* Custom button styling to match site's theme */
+      .btn-rock {
+        background-color: #8a1812;
+        color: white;
+      }
+      
+      .btn-rock:hover {
+        background-color: #c9af1a;
+        color: white;
+      }
+
+
+  #navbar-corporate {
+    background-color: #c9af1a;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #navbar-corporate .nav-link {
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 15px;
+    display: block;
+  }
+  
+  #navbar-corporate .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  #navbar-corporate .main-section {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  
+  #navbar-corporate .sub-section {
+    font-size: 1rem;
+    padding-left: 0;
+    margin-bottom: 8px;
+  }
+  
+  /* Make sure sub-sections display properly on mobile */
+  @media (max-width: 576px) {
+    #navbar-corporate .nav {
+      display: block !important;
+    }
