@@ -8,6 +8,7 @@
 
 h1 {
   font-family: 'Ultra', serif !important;
+  text-shadow: 2px 2px 5px darkred;
 }
 
 h2 {
@@ -244,6 +245,3 @@ footer a:hover {
       display: block !important;
     }
 	  
-.shadow {
-  text-shadow: 2px 2px 4px rgba(139, 0, 0, 0.7); /* Dark red shadow with some transparency */
-}
