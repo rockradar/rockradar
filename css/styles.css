@@ -243,3 +243,7 @@ footer a:hover {
     #navbar-corporate .nav {
       display: block !important;
     }
+	  
+.shadow {
+  text-shadow: 2px 2px 4px rgba(139, 0, 0, 0.7); /* Dark red shadow with some transparency */
+}
