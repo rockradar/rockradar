@@ -282,3 +282,20 @@ footer a:hover {
     background-color: #c9af1a;
     color: black !important;
   }  
+	  
+	  .about-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-wrapper {
+  display: inline-block;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.icon-wrapper img {
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}

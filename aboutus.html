@@ -112,10 +112,7 @@
             <img src="images/website_photo_9.jpg" width="80" height="80" class="rounded-circle" alt="Values Icon">
           </div>
           <h3 class="card-title" style="color: #8a1812;">Our Values</h3>
-          <p class="card-text" style="color: #ffffff;">Connection</p>
-          <p class="card-text" style="color: #ffffff;">Passion</p>
-          <p class="card-text" style="color: #ffffff;">Comfort</p>
-          <p class="card-text" style="color: #ffffff;">Nostalgia </p>
+          <p class="card-text" style="color: #ffffff;">Rock Radar embraces a sense of connection. It's often said that hard rock is a lifestyle. It means that fans form an identity around the music, it is a way of expressing oneself, and their passion for the music. Rock Radar creates a comforting digital space where they can feel at home within the online presence of other fans. We keep the nostalgia of hard rock alive by bringing fans together and connecting over the music that has shaped them and make them proud to be a hard rock fan.</p>
         </div>
         <div class="card-footer p-2 text-center" style="background-color: #8a1812;">
         </div>
@@ -126,36 +123,44 @@
 
 <!-- JavaScript for the interactive cards -->
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const toggleButtons = document.querySelectorAll('.toggle-card-content');
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all the about cards
+  const aboutCards = document.querySelectorAll('.about-card');
+  
+  // Add hover effects to cards
+  aboutCards.forEach(card => {
+    // Add transition for smooth movement
+    card.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
     
-    toggleButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        const card = this.closest('.card');
-        const hoverContent = card.querySelector('.card-hover-content');
-        
-        hoverContent.classList.toggle('active');
-        
-        if (hoverContent.classList.contains('active')) {
-          this.textContent = 'Show Less';
-        } else {
-          this.textContent = 'Learn More';
-        }
-      });
+    card.addEventListener('mouseenter', function() {
+      // Scale up slightly and enhance shadow on hover
+      this.style.transform = 'translateY(-10px)';
+      this.style.boxShadow = '0 12px 24px rgba(0,0,0,0.25)';
     });
     
-    // Add hover effect
-    const aboutCards = document.querySelectorAll('.about-card');
-    aboutCards.forEach(card => {
-      card.addEventListener('mouseenter', function() {
-        this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.2)';
-      });
-      
-      card.addEventListener('mouseleave', function() {
-        this.style.boxShadow = '0 0.5rem 1rem rgba(0, 0, 0, 0.15)';
-      });
+    card.addEventListener('mouseleave', function() {
+      // Return to original state when mouse leaves
+      this.style.transform = 'translateY(0)';
+      this.style.boxShadow = '0 0.5rem 1rem rgba(0, 0, 0, 0.15)';
     });
   });
+  
+  // Add gold circles around the profile images
+  const profileImages = document.querySelectorAll('.icon-wrapper img');
+  
+  profileImages.forEach(img => {
+    // Get the parent wrapper
+    const wrapper = img.parentElement;
+    
+    // Style the wrapper to create the circle effect
+    wrapper.style.position = 'relative';
+    wrapper.style.display = 'inline-block';
+    wrapper.style.borderRadius = '50%';
+    wrapper.style.padding = '5px'; // Space for the border
+    wrapper.style.background = 'linear-gradient(to right, #c9af1a, #e6ce42)'; // Gold gradient
+    wrapper.style.boxShadow = '0 0 15px rgba(201, 175, 26, 0.6)'; // Subtle glow
+  });
+});
 </script>
 	  
     <!-- Submit a Band Section -->
